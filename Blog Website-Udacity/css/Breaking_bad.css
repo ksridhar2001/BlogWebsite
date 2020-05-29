@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+    "tp tp tp"
+    "nv nv nv"
+    "main main main"
+    "ft ft ft";
+    /*border:2px solid yellow;*/
+    background-color: black;
+    color:white;
+    
+}
+
+.topic{
+   grid-area: tp;
+   font-size: 50px;
+   color: white;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-align: center;
+   padding:15px; 
+  
+   
+}
+
+
+
+.navigation{
+    grid-area: nv;
+    background-color:rgb(86, 145, 194);
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    
+}
+
+.content{
+    grid-area: main;
+    /*border:2px solid fuchsia;*/
+    
+}
+.footer{
+    grid-area: ft;
+    /*border:2px solid orange;*/
+}
+.navigation a{
+    color:white;
+    text-align: center;
+    text-decoration:none;
+    padding:9.5px;
+}
+.navigation a.active{
+    background-color:rgb(72, 118, 155);
+    font-size: 25px;
+
+}
+.navigation a:hover:not(.active){
+    background-color:rgb(52, 82, 107);
+    
+}
+
+
+
+.intro h1{
+    color:salmon;
+    padding-left:30px;
+    padding-bottom: 0;
+    
+}
+.intro-content{
+    padding-top:0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}  
+.intro-content p{
+    font-size: 15px;
+    word-wrap: break-word;
+    text-align:justify;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+
+
+.main-char h1{
+    color:salmon;
+    padding-left:30px;
+    padding-bottom: 0;
+    
+}
+.characters
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    padding-bottom:30px;
+    justify-content:space-evenly;
+    
+}
+.box{
+    
+    background-color: rgb(158, 157, 157);
+    margin:20px;
+    height:auto;
+    border: 2px solid rgb(255, 255, 255);
+}
+.box img{
+    
+    width:225px;
+    height:270px;
+   
+}
+.box .name{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-top:5px;
+    font-weight: bold;
+    
+}
+
+.box .sname{
+    font-size: 17px;
+    color: black;
+    text-align: center;
+    padding-top:5px;
+    font-weight: bold;
+}
+
+
+
+
+.seasons{
+    
+    justify-content:space-between;
+    padding-bottom:30px;
+
+}
+.season-content h1{
+    color:salmon;
+    padding-left:30px;
+    padding-bottom: 0;
+   
+}
+
+.season{
+   
+    padding: 30px;
+    
+
+}
+.season h2{
+    text-decoration: underline;
+    text-underline-position: under;
+    color:rgb(109, 230, 105);
+    
+}
+.season img{    
+    
+    width:290px;
+    height:350px;
+    border:1px solid white;
+   
+}  
+.season p{
+    font-size: 15px;
+    word-wrap: break-word;
+    text-align: justify;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+} 
+.reference{
+    
+    
+    padding-bottom:30px;
+    
+}
+.reference h1{
+    
+    color:salmon;
+    padding-bottom: 0;
+    padding-left: 30px;
+    
+}
+.reference ol{
+    
+    
+    line-height: 2;
+    
+}
+.reference a{
+    color:rgb(172, 212, 92);
+   
+}
+
+
+
+.comment{
+    padding:30px;
+    
+}
+.comment h1{
+    color:salmon;
+    padding-bottom: 0;
+    
+}    
+.comment textarea{
+    background-color: #5d5a66;
+    padding:10px;
+    width:400px;
+    height:150px ;
+    resize: none;
+}
+ textarea::placeholder{
+    color:white;
+}
+.comment input[type=submit]{
+    background-color: rgb(250, 114, 99);
+    margin-top:10px;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 120px;
+    height: 45px;
+    
+}
+
+.comment input[type=submit]:hover{
+    background-color: salmon;
+}
+
+
+
+
+
+.line{
+    border: 5px solid deepskyblue;
+    width:95%;
+}
+
+.social{
+   font-size: 25px;
+   text-decoration: underline;
+   text-underline-position:under;
+   padding-left:50px;
+   padding-top:30px;
+   padding-bottom: 0;
+  
+}
+.social_media ul{
+    list-style-type: none;
+   
+}    
+.social_media li{
+    float: left;
+    padding: 10px;
+    
+
+}
+
+.social_media li a:hover{
+    background-color:black;
+}
+
+.social_media li a img{
+   width:40px;
+   height:40px;
+   
+}

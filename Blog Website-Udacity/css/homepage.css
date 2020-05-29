@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-areas:
+    "tp tp tp"
+    "nv nv nv"
+    "main main main"
+    "ft ft ft";
+    /*border:2px solid yellow;*/
+    background-color: black;
+    color:white;
+    
+}
+
+.topic{
+   grid-area: tp;
+   font-size: 50px;
+   color: white;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   text-align: center;
+   padding:15px; 
+  
+   
+}
+
+
+
+.navigation{
+    grid-area: nv;
+    background-color:rgb(86, 145, 194);
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    
+}
+
+.content{
+    grid-area: main;
+    /*border:2px solid fuchsia;*/
+    
+}
+.footer{
+    grid-area: ft;
+    /*border:2px solid orange;*/
+}
+.navigation a{
+    color:white;
+    text-align: center;
+    text-decoration:none;
+    padding:9.5px;
+}
+.navigation a.active{
+    background-color:rgb(72, 118, 155);
+    font-size: 25px;
+
+}
+.navigation a:hover:not(.active){
+    background-color:rgb(52, 82, 107);
+    
+}
+
+#b1{
+    
+    background-color:lightcoral;
+    
+    
+}
+
+#b2{
+    
+    background-color: rgb(150, 109, 109);
+}
+#b3{
+   
+    background-color: rgb(124, 116, 116);
+}
+
+.cards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+   
+    
+    
+}
+.card{
+  
+    width: 400px;
+    border:2px solid white;
+    margin:20px;
+    
+}
+.card-content{
+    padding-top:0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
+}
+.card-content p{
+    font-size: 15px;
+    word-wrap: break-word;
+    text-align:justify;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.card img{
+
+    width:100%;
+    height:auto;
+  
+}
+h1{
+    color:black;   
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
+}
+.read{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+.line{
+    border: 2px solid deepskyblue;
+    width:95%;
+    
+}
+.subscribe_heading{
+    color:rgb(245, 57, 88);
+    
+    font-size: 50px;
+    font-weight: bold;
+    padding:30px;
+    margin-left: 20px;
+  }
+  
+form{
+    color:black;
+    width:fit-content;
+    margin-left:50px;
+    margin-right: 50px;
+    font-size: 20px;
+   
+    
+}
+
+.sub_contain{
+    background-color: rgb(86, 145, 194);
+    padding:20px;
+    
+}
+
+.sub_contain h2{
+    margin:20px 10px;
+    
+}
+
+label{
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+input[type=text],input[type=submit]{
+    
+    width:75%;
+    margin:10px;
+    padding: 8px ;
+    border: 1px solid #ccc;
+    
+}
+input[type=radio]{
+    margin: 10px;
+}
+
+input[type=submit]{
+    font-weight: bold;
+    font-size: 25px;
+    background-color: lightcoral;
+}
+input[type=submit]:hover{
+    background-color:rgb(255, 136, 136);
+}
+
+.social{
+   font-size: 25px;
+   text-decoration: underline;
+   text-underline-position:under;
+   padding-left:50px;
+   padding-top:30px;
+   padding-bottom: 0;
+}
+.social_media ul{
+    list-style-type: none;
+    
+    
+    
+}
+.social_media li{
+    float: left;
+    padding: 10px;
+    
+}
+
+
+
+.social_media li a img{
+   width:40px;
+   height:40px;
+   
+}
+
+
